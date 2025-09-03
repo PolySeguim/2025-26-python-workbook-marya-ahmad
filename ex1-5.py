@@ -1,18 +1,10 @@
-
-"""
-Exercise 1:  Mailing Address
+""" Exercise 1:  Mailing Address
 Create a program that displays your name and complete mailing 
 address formatted in the manner that you would usually see it 
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
 
-def print_mailing_address():
-    print("Marya Ahmad")
-    print("4857 Tillinghast Ct")
-    print("Mason, OH 45040")
-    print("USA")
-    
 
 """
 Exercise 2:  Hello
@@ -61,3 +53,27 @@ def print_hi(name):
 
 if __name__ == "__main__":
     print_hi("Netbeans")
+
+"""Exercise 1:  Mailing Address
+"""
+print("Marya Ahmad")
+print("4857 Tillinghast Ct")
+print("Mason, OH 45040")
+
+"""Exercise 2:  Hello"""
+userName = input("What is your name? ")
+print("Hello", userName)
+
+"""Exercise 3:  Area of a Room"""
+width = float(input("What is the width of the room in feet?"))
+length = float(input("What is the length of the room in feet?"))
+area = width * length
+print("The area of the room is", area, "square feet")
+
+"""Exercise 4:  Area of a Field"""
+length = float(input("What is the length of the field in feet?"))
+width = float(input("What is the width of the field in feet?"))
+areaAcres = (length * width)/43560
+print("The area of the field is", areaAcres, "acres")
+
+
