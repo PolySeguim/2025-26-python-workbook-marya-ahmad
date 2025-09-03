@@ -7,6 +7,13 @@ on the outside of an envelope.  Your program does not need to
 read any input from the user.  (9 lines)
 """
 
+def print_mailing_address():
+    print("Marya Ahmad")
+    print("4857 Tillinghast Ct")
+    print("Mason, OH 45040")
+    print("USA")
+    
+
 """
 Exercise 2:  Hello
 Write a program that asks the user to enter his or her name.  
