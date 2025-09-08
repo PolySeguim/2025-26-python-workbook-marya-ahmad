@@ -61,10 +61,6 @@ def print_hi(name):
 if __name__ == "__main__":
     print_hi("Netbeans")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
 """Exercise 1:  Mailing Address
 """
 print("Marya Ahmad")
@@ -87,11 +83,13 @@ width = float(input("What is the width of the field in feet?"))
 areaAcres = (length * width)/43560
 print("The area of the field is", areaAcres, "acres")
 
+"""Exercise 5:  Bottle Deposits"""
+def bottleDeposits():
+    refund = 0
+    numOneLiterBottle = int(input("Amount of bottles 1 liter or less:"))
+    numMoreThanOneLiterBottle = int(input("Amount of bottles more than 1 liter:"))
+    refund = (numOneLiterBottle * 0.10) + (numMoreThanOneLiterBottle * 0.25)
+    print("Your refund is $" ,refund)
+    
 
-<<<<<<< HEAD
-
-=======
-#Testing Suite
-areaRoom()
-=======
->>>>>>> origin/main
+bottleDeposits()

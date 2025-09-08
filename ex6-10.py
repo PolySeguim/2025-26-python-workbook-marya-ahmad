@@ -55,4 +55,24 @@ for computing the second last item in the list.
 """
 
 if __name__ == "__main__":
-    print("Hi there!")
+    print("Hi there!");
+
+"""Exercise 6:  Tax and Tip"""
+def taxAndTip():
+    print("Tax and Tip")
+    mealCost = float(input("What is the cost of your meal? $"))
+    taxRate = float(input("What is the tax rate in your area as a percent? "))
+    tax = mealCost * (taxRate / 100)
+    tip = mealCost * 0.18
+    totalCost = mealCost + tax + tip
+    print("The tax on your meal is $", tax)
+    print("The tip on your meal is $", tip)
+    print("The total cost of your meal is $", totalCost)
+taxAndTip()
+
+"""Exercise 7: Sum of the First n Positive Integers"""
+def sumOfFirstN():
+    n = int(input("Enter a positive integer: "))
+    sum = (n*(n + 1))/2
+    print("The sum of the first", n, "positive integers is", sum)
+sumOfFirstN() 
