@@ -23,6 +23,14 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
+def areaRoom():
+    print("Area of Room")
+    units = input("What units are you using?  feet or meters: ")
+    width = float(input("Width: "))
+    length = float(input("Length: "))
+
+    areaRoom = width*length
+    print("Area of the room is " + str(areaRoom) + " " + units + " squared")
 
 """
 Exercise 4:  Area of a Field
@@ -45,7 +53,6 @@ and displaying the refund that will be received for returning
 those containers.  Format the output so that it includes a dollar 
 sign and always displays exactly two decimal places.  (15 lines)
 """
-
 
 def print_hi(name):
     print(f"Hi, {name}")
@@ -76,4 +83,13 @@ width = float(input("What is the width of the field in feet?"))
 areaAcres = (length * width)/43560
 print("The area of the field is", areaAcres, "acres")
 
+"""Exercise 5:  Bottle Deposits"""
+def bottleDeposits():
+    refund = 0
+    numOneLiterBottle = int(input("Amount of bottles 1 liter or less:"))
+    numMoreThanOneLiterBottle = int(input("Amount of bottles more than 1 liter:"))
+    refund = (numOneLiterBottle * 0.10) + (numMoreThanOneLiterBottle * 0.25)
+    print("Your refund is $" ,refund)
+    
 
+bottleDeposits()
